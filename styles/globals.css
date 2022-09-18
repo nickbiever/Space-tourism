@@ -1,26 +1,74 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer base {
+  @font-face {
+    font-family: 'barlow-regular';
+    src: url('../public/fonts/Barlow-Regular.ttf');
   }
-  body {
-    color: white;
-    background: black;
+  
+  @font-face {
+    font-family: 'barlow-condensed-bold';
+    src: url('../public/fonts/BarlowCondensed-Bold.ttf');
   }
+  
+  @font-face {
+    font-family: 'barlow-condensed-regular';
+    src: url('../public/fonts/BarlowCondensed-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'bellefair-regular';
+    src: url('../public/fonts/Bellefair-Regular.ttf');
+  }
+}
+
+@layer components {
+  .heading-1 {
+    font-family: 'bellefair-regular';
+    font-size: 9.375em;
+  }
+
+  .heading-2 {
+    font-family: 'bellefair-regular';
+    font-size: 6.25em;
+  }
+
+  .heading-3 {
+    font-family: 'bellefair-regular';
+    font-size: 3.5em;
+  }
+
+  .heading-4 {
+    font-family: 'bellefair-regular';
+    font-size: 2em;
+  }
+
+  .heading-5 {
+    font-family: 'barlow-condensed-regular';
+    font-size: 1.75em;
+    letter-spacing: 4.75px;
+  }
+
+  .subheading-1 {
+    font-family: 'bellefair-regular';
+    font-size: 1.75em;
+  }
+
+  .subheading-2 {
+    font-family: 'barlow-condensed-regular';
+    font-size: 0.875em;
+    letter-spacing: 2.35px;
+  }
+
+  .nav-text {
+    font-family: 'barlow-condensed-regular';
+    font-size: 1em;
+    letter-spacing: 2.7px;
+  }
+}
+
+html {
+  font-size: 1.125em;
 }
