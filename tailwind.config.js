@@ -16,6 +16,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['barlow-regular', ...defaultTheme.fontFamily.sans],
+      },
+      backdropBlur: {
+        30: '30px',
       }
     },
   },
